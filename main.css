@@ -8,3 +8,26 @@ body{
     padding: 28px 0px;
     background-color: #7d05c0;
 }
+
+#Logo_stemwijzer {
+    height: 56px;
+    width: 270px;
+    background-size: contain;
+    background-position: center left;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+#start_button {
+    min-width: 188px;
+    min-height: 68px;
+    background-color: black;
+    color: white;
+    transition: background-color .2s ease;
+    display: inline-block;
+    padding: .65em .5em;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
