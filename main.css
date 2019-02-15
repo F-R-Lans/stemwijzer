@@ -1,0 +1,10 @@
+body{
+    background-image: url("https://tweedekamer2017.stemwijzer.nl/public/gfx/background.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 28px 0px;
+    background-color: #7d05c0;
+}
