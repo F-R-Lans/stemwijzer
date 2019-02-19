@@ -1,3 +1,7 @@
+// show question shows inner, make it show the tables
+
+
+
 var object = {
     "firstname" : "maarten",
     "lastname" :  "Nouwen",
@@ -19,6 +23,13 @@ var object = {
        
       ]
 };
+
+
+var header = document.getelementbyid()
+function showpage(e){
+  var pagenumber = Number(e.id.replace("button, "")) - 1;
+
+}
 
 button = listenevent de rest is statisch, pik letterlijk de css smartass
 
@@ -66,3 +77,33 @@ results = [{
 results.pvv.score
 
 je kan een weging geven aan de mening van de partijen voor die vraag (1 keer "pro geeft 1 punt voor die partij)
+
+var fruits = ["peer", "kiwi"]
+array is altijd numeriek, (index => value)
+console.log(fruits[1]);
+
+een object is assoc (key(string) => value)
+var studentnummervankoen
+students["99033595"] = "koen pardoen";
+
+<button id = "btn">
+
+</button>
+
+script
+
+var btn = document.getelementbyid("btn)
+
+btn.innerHTML = "doet niks
+var x = 12;
+
+btn.innerHTML = += x;
+
+x = 16;
+
+function doetnuwat(){
+  alert("grapje)
+  btn.style.backgroundcolor = "red";
+}
+
+appendchild basically makes the written function behave as tags 

@@ -1,3 +1,9 @@
+main {
+    background-color: white;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 70px;
+}
 body{
     background-image: url("https://tweedekamer2017.stemwijzer.nl/public/gfx/background.jpg");
     background-repeat: no-repeat;
@@ -9,7 +15,7 @@ body{
     background-color: #7d05c0;
 }
 
-#Logo_stemwijzer {
+#Logo {
     height: 56px;
     width: 270px;
     background-size: contain;
@@ -18,8 +24,8 @@ body{
     background-repeat: no-repeat;
 }
 
-#start_button {
-    min-width: 188px;
+.button {
+    min-width: 100px;
     min-height: 68px;
     background-color: black;
     color: white;
@@ -30,4 +36,11 @@ body{
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+}
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }

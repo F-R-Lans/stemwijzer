@@ -1,18 +1,21 @@
-const finalscore = [];
+//define opinion id's
+const short = document.getElementById("opinion_short");
+const long = document.getElementById("opinion_long")
 
-console.log(parties[7]);
-// this reads all parties 
-parties.forEach(e => console.log(e.name));
+//define variables
+var question_number = 0;
+var answers = [];
+var final_score = [];
+
 
 //onclick generates question innerHTML
-function Start(){
+function Start_survey(){
     showquestion();
 }
 function showquestion(){
-  console.log();
-  
-   
-};
+    short.innerHTML = "test";
+    long.innerHTML =  "test 2";
+}
 
 
 
@@ -24,5 +27,13 @@ function showquestion(){
 5: make step by step plan to improve on outline
 6: finalize 
 7: touchups 
+
+console.log(parties[7]);
+// this reads all parties 
+parties.forEach(e => console.log(e.name));
+
+
+
+
 
 */

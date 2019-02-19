@@ -10,11 +10,15 @@
 </head>
 <body>
     <main>
-            <img id="Logo_stemwijzer" src="https://tweedekamer2017.stemwijzer.nl/public/gfx/logo-stemwijzer.svg" alt="">
-            <button id="start_button" style="display: inline-block;" onclick="Start()">Start</button>
+            <img id="Logo" src="https://tweedekamer2017.stemwijzer.nl/public/gfx/logo-stemwijzer.svg" alt="">
+            <h1 id="opinion_short">Stemwijzer</h1>
+            <p id="opinion_long"></p>
+            <button id="start_button" style="display: inline-block;" onclick="Start_survey()">Start</button>
+            <button style="display: hidden" class="button" onclick="Answer('pro','next')">eens</button>
+            <button style="display: hidden" class="button" onclick="Answer('contra','next')">oneens</button>
+            <button style="display: hidden" class="button" onclick="Answer('ambivalent','next')">geen mening</button>
+            <button style="display: hidden" class="button" onclick="back('null','previous')">terug</button>
     </main>
-    
-
     <script src="data.js"></script>
     <script src="voting.js"></script>    
 </body>
