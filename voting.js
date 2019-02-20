@@ -39,4 +39,4 @@ function NextQuestion(counter){
     }
 }
 
-//final counter goes here
+function score()
