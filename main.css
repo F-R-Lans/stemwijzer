@@ -37,6 +37,20 @@ body{
     font-weight: bold;
     cursor: pointer;
 }
+#start_button {
+    min-width: 100px;
+    min-height: 68px;
+    background-color: black;
+    color: white;
+    transition: background-color .2s ease;
+    display: inline-block;
+    padding: .65em .5em;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
 .hide {
     display: none;
 }
