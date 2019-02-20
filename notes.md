@@ -107,3 +107,22 @@ function doetnuwat(){
 }
 
 appendchild basically makes the written function behave as tags 
+
+1: read up on basics
+2: read up on innerHTML
+3: make battleplan based on notes from maarten
+4: make basic outline
+5: make step by step plan to improve on outline
+6: finalize 
+7: touchups 
+
+
+1: understand how to show json on innerHTML
+2: make function that counts the question[1] and shows it on next/back 
+
+console.log(parties[7]);
+// this reads all parties 
+parties.forEach(e => console.log(e.name));
+
+
+
