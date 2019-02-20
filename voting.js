@@ -5,8 +5,7 @@ const long = document.getElementById("opinion_long")
 //define variables
 var question_number = 0;
 var answers = [];
-var final_score = [];
-
+var finalAnswer = [];
 
 //onclick generates question innerHTML
 function Start_survey(){
@@ -20,37 +19,24 @@ function showquestion(){
 }
 
 //AddAnswer saves answer in array
-function AddAnswer(answer, counter){
+function AddAnswer(answer, MoreLess){
     answers[question_number] = answer;
-    NextQuestion(counter)
+    console.log(answer);
+    NextQuestion(MoreLess)
 }
 
+//needs to go next on pro, ambivalent, and null 
 function NextQuestion(counter){
     if (subjects[question_number]) {
      if (counter == 'next') {
-         question_number++
-         showquestion()
-     } else if(counter == 'previous')  {
+         question_number++;
+         showquestion();
+         //needs to wipe previous choice, look up splice
+     } else if(counter == 'previous' && question_number != 0)  {
          question_number--
-         showquestion()
+         showquestion();
      }   
     }
 }
 
-
-/*
-TODO back function? not sure if it need to go in for loop
-*/
-
-/* 
-example of data.js object
-var subjects = [{
-    "title": "Bindend referendum",
-    "statement": "Er moet een bindend referendum komen, waarmee burgers door het parlement aangenomen wetten kunnen tegenhouden.",
-    "parties": [{
-            "name": "PVV",
-            "position": "pro",
-            "explanation": "Geen toelichting gegeven"
-        },
-
-*/ 
+//final counter goes here
