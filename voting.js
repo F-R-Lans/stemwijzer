@@ -14,8 +14,8 @@ function Start_survey(){
 }
 function showquestion(){
     //short is title, long is statement
-    short.innerHTML = "test";
-    long.innerHTML =  "test 2";
+    short.innerHTML = subjects[0].title;
+    long.innerHTML =  subjects[0].statement;
 }
 
 /*counting function comes here
