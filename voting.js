@@ -28,7 +28,7 @@ function AddAnswer(answer, MoreLess){
     NextQuestion(MoreLess)
 }
 
-//needs to go next on pro, ambivalent, and null 
+//looks if answer is given and goes to next question
 function NextQuestion(counter){
     if (subjects[question_number]) {
      if (counter == 'next' && question_number != subjects.length - 1) {
@@ -43,7 +43,7 @@ function NextQuestion(counter){
      }
     }
 }
-
+//calculate results, take answers, compare with party position, and add if match. 
 function calc_results(){
     for(var z = 0; z<answers.length; z++){
         for( var x = 0; x<final_results.length; x++){
@@ -55,6 +55,7 @@ function calc_results(){
             }
         }
     }
+    //sort final results from highest to lowest
     final_results.sort(function(a,b){
         return b["points"]-a["points"]
     });
