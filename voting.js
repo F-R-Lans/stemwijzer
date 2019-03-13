@@ -13,8 +13,13 @@ for(var r = 0; r<parties.length; r++) {
 //onclick generates question innerHTML
 function Start_survey(){
     showquestion();
-    //TODO make start button dissapear on onclick
+    document.getElementById("question_buttons").style.display = "block";
+    document.getElementById("start_button").style.display = "none";
+    console.log("question_buttons");
+    
 }
+    //TODO make start button dissapear on onclick
+
 function showquestion(){
     //short is title, long is statement
     short.innerHTML = subjects[question_number].title;
@@ -60,4 +65,13 @@ function calc_results(){
         return b["points"]-a["points"]
     });
     console.log(final_results)
+}
+
+// print out final results
+
+function showfinalresults(){
+    document.getElementById("resultpage").style.display = "block";
+
+    final_results.toString();
+
 }
