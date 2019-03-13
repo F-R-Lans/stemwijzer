@@ -1,6 +1,8 @@
 //define opinion id's
 const short = document.getElementById("opinion_short");
-const long = document.getElementById("opinion_long")
+const long = document.getElementById("opinion_long");
+const whomst = document.getElementById("results");
+
 
 //define variables
 var question_number = 0;
@@ -65,13 +67,13 @@ function calc_results(){
         return b["points"]-a["points"]
     });
     console.log(final_results)
+    showfinalresults()
 }
 
 // print out final results
 
 function showfinalresults(){
     document.getElementById("resultpage").style.display = "block";
-
-    final_results.toString();
-
+    document.getElementById("questionpage").style.display = "none";
+    whomst.innerHTML = final_results;
 }
